@@ -482,7 +482,9 @@ autocmd FileType python setlocal softtabstop=4 tabstop=4 shiftwidth=4 textwidth=
 
 autocmd FileType cs setlocal softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
-autocmd FileType markdown setlocal spell spelllang=en_us textwidth=79 colorcolumn=80
+" In case you need spellcheck:
+" autocmd FileType markdown setlocal spell spelllang=en_us textwidth=79 colorcolumn=80
+autocmd FileType markdown setlocal textwidth=79 colorcolumn=80
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
