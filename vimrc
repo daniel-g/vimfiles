@@ -488,8 +488,9 @@ set backspace=indent,eol,start
 autocmd BufWritePre *.rb,*.coffee :%s/\s\+$//e
 
 " Inserts the path of the currently edited file into a command
-" Command mode: %%
-cmap %% <C-R>=expand("%:p:h") . "/" <CR>
+" In command mode, type: Ctrl + l
+cmap <C-l> <C-R>=expand("%:p") <CR>
+cmap <C-d> <C-R>=expand("%:p:h") <CR>
 
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
