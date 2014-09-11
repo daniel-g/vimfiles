@@ -153,7 +153,7 @@ nmap <leader>w :CommandW<CR>
 Bundle 'scrooloose/syntastic'
 
 let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
@@ -163,12 +163,6 @@ let g:syntastic_mode_map = { 'mode': 'active',
 " Automatically add end at the end of ruby and vim blocks
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'tpope/vim-endwise'
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Add a few paired mappings, in particular [q and ]q to navigate the quickfix
-" list
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'tpope/vim-unimpaired'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Handy file manipulations. Favorites are :Remove and :Rename
