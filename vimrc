@@ -121,8 +121,8 @@ map <leader><leader>f :let g:ctrlp_default_input = 0<cr>:CtrlPClearCache<cr>:Ctr
 Bundle 'mileszs/ack.vim'
 Bundle 'rking/ag.vim'
 
-map <leader>a :Ag!<space>
-map <leader>A :Ag! <C-R><C-W><CR>
+" map <leader>a :Ag!<space>
+" map <leader>A :Ag! <C-R><C-W><CR>
 
 " Use ag for search, it's much faster than ack.
 " See https://github.com/ggreer/the_silver_searcher
