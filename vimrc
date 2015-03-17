@@ -477,6 +477,7 @@ autocmd BufNewFile,BufRead *.jst.ejs set ft=jst
 autocmd FileType python setlocal softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
 autocmd FileType cs setlocal softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+autocmd FileType javascript setlocal softtabstop=2 tabstop=2 shiftwidth=2 textwidth=79
 
 " In case you need spellcheck:
 " autocmd FileType markdown setlocal spell spelllang=en_us textwidth=79 colorcolumn=80
