@@ -60,6 +60,7 @@ autocmd BufEnter    *.git/COMMIT_EDITMSG  exe BufEnterCommit()
 " Automatically remove fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
+Bundle 'digitaltoad/vim-jade'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Surrond stuff with things. ysiw" surrounds a word with quotes
 " cs"' changes " to '
