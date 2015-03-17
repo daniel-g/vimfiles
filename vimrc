@@ -119,7 +119,6 @@ map <leader><leader>f :let g:ctrlp_default_input = 0<cr>:CtrlPClearCache<cr>:Ctr
 " Adds :Ack/:Ag complete w/ quick fix. I prefer to use :Ag! which does not open
 " the first thing it finds automatically.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'mileszs/ack.vim'
 Bundle 'rking/ag.vim'
 
 " map <leader>a :Ag!<space>
@@ -128,7 +127,7 @@ Bundle 'rking/ag.vim'
 " Use ag for search, it's much faster than ack.
 " See https://github.com/ggreer/the_silver_searcher
 " on mac: brew install the_silver_searcher
-let g:agprg = 'ag --nogroup --nocolor --column --smart-case'
+let g:ackprg = 'ag --vimgrep'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Kills a buffer without closing a split, use ,w . Used in conjunction 
